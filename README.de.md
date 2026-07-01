@@ -46,7 +46,7 @@ docs/MANUAL_TESTS.md    ← manuelle Testanleitung
 
 Das Release enthält zusätzlich ein fertiges Archiv mit **nur** dem
 `LinkedIssueFactory/`-Ordner – siehe das
-[neueste Release](https://github.com/marcwoge/LinkedIssueFactory/releases/latest).
+[neueste Release](https://github.com/marcwoge/mantisBT-LinkedIssueFactory/releases/latest).
 
 ---
 

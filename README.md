@@ -46,7 +46,7 @@ docs/MANUAL_TESTS.md    ← manual test checklist
 
 The release also ships a ready-to-drop archive containing only the
 `LinkedIssueFactory/` folder – see the
-[latest release](https://github.com/marcwoge/LinkedIssueFactory/releases/latest).
+[latest release](https://github.com/marcwoge/mantisBT-LinkedIssueFactory/releases/latest).
 
 ---
 
