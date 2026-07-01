@@ -83,6 +83,7 @@ $s_plugin_LinkedIssueFactory_btn_cancel          = 'Cancel';
 $s_plugin_LinkedIssueFactory_btn_back            = 'Back';
 $s_plugin_LinkedIssueFactory_btn_save            = 'Save configuration';
 $s_plugin_LinkedIssueFactory_btn_save_schedule   = 'Save schedule';
+$s_plugin_LinkedIssueFactory_btn_reload_fields   = 'Reload fields';
 
 # Mode hint
 $s_plugin_LinkedIssueFactory_mode_recurring_hint = 'Instead of creating the ticket now, define a recurring schedule.';

@@ -106,7 +106,18 @@ if( $f_target_project_id <= 0 ) {
 	<div class="widget-body">
 	<div class="widget-main">
 
-	<form method="get" action="<?php echo plugin_page( 'create_related' ); ?>" class="form-inline">
+	<?php
+	# The action is a bare "plugin.php" (no query string): with method="get" the
+	# browser builds the whole query string from the fields below, which avoids
+	# the ambiguity of a form action that already carries a query string. The
+	# "page" parameter therefore travels via the hidden field.
+	#
+	# Changing the project reloads the form so the target project's categories
+	# and custom fields are shown. The select auto-submits on change; the visible
+	# "Reload fields" button is a reliable fallback when a theme/JS layer swallows
+	# the change event on the dropdown.
+	?>
+	<form method="get" action="<?php echo helper_mantis_url( 'plugin.php' ); ?>" class="form-inline">
 		<input type="hidden" name="page" value="<?php echo string_attribute( plugin_get_current() . '/create_related' ); ?>" />
 		<input type="hidden" name="bug_id" value="<?php echo $f_bug_id; ?>" />
 		<label for="target_project_id"><?php echo plugin_lang_get( 'target_project' ); ?></label>
@@ -115,7 +126,10 @@ if( $f_target_project_id <= 0 ) {
 			<?php # Only projects the user may report in. ?>
 			<?php print_project_option_list( $f_target_project_id, false, null, false, true ); ?>
 		</select>
-		<noscript><input type="submit" class="btn btn-sm btn-primary" value="&raquo;" /></noscript>
+		<button type="submit" class="btn btn-sm btn-primary btn-white">
+			<i class="ace-icon fa fa-refresh"></i>
+			<?php echo plugin_lang_get( 'btn_reload_fields' ); ?>
+		</button>
 	</form>
 
 	</div>

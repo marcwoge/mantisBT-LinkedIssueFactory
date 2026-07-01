@@ -83,6 +83,7 @@ $s_plugin_LinkedIssueFactory_btn_cancel          = 'Abbrechen';
 $s_plugin_LinkedIssueFactory_btn_back            = 'Zurück';
 $s_plugin_LinkedIssueFactory_btn_save            = 'Konfiguration speichern';
 $s_plugin_LinkedIssueFactory_btn_save_schedule   = 'Wiederholung speichern';
+$s_plugin_LinkedIssueFactory_btn_reload_fields   = 'Felder neu laden';
 
 # Modus-Hinweis
 $s_plugin_LinkedIssueFactory_mode_recurring_hint = 'Statt das Ticket jetzt zu erstellen, eine wiederkehrende Erstellung definieren.';

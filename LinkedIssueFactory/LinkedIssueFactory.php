@@ -45,14 +45,14 @@ class LinkedIssueFactoryPlugin extends MantisPlugin {
 		$this->description  = 'Create a linked new ticket from an existing one – once or on a recurring schedule.';
 		$this->page         = 'config';
 
-		$this->version  = '1.0.0';
+		$this->version  = '1.0.1';
 		$this->requires = array(
 			'MantisCore' => '2.0.0',
 		);
 
 		$this->author  = 'Marc-Philipp Woge';
 		$this->contact = 'marc.woge@googlemail.com';
-		$this->url     = 'https://github.com/marcwoge/reveille';
+		$this->url     = 'https://github.com/marcwoge/mantisBT-LinkedIssueFactory';
 	}
 
 	/**
