@@ -1,0 +1,139 @@
+<?php
+/**
+ * LinkedIssueFactory – Deutsche Sprachdatei.
+ *
+ * MantisBT-Plugin-Sprachvariablen müssen den vollständigen Präfix
+ * "plugin_<Basename>_" tragen; plugin_lang_get('key') sucht nach
+ * "plugin_LinkedIssueFactory_key".
+ *
+ * @package LinkedIssueFactory
+ * @license MIT
+ */
+
+# Plugin-Manifest
+$s_plugin_LinkedIssueFactory_plugin_title       = 'Linked Issue Factory';
+$s_plugin_LinkedIssueFactory_plugin_description = 'Erzeugt aus einem bestehenden Ticket ein neues, verknüpftes Ticket – einmalig oder wiederkehrend.';
+
+# Menüs
+$s_plugin_LinkedIssueFactory_menu_create_related = 'Verknüpftes Ticket erstellen';
+$s_plugin_LinkedIssueFactory_menu_config         = 'Linked Issue Factory: Konfiguration';
+$s_plugin_LinkedIssueFactory_menu_schedules      = 'Linked Issue Factory: Wiederholungen';
+$s_plugin_LinkedIssueFactory_menu_dashboard      = 'Linked Issue Factory: Dashboard';
+
+# Seitentitel
+$s_plugin_LinkedIssueFactory_create_title        = 'Verknüpftes Ticket erstellen';
+$s_plugin_LinkedIssueFactory_schedule_edit_title = 'Wiederkehrende Erstellung';
+$s_plugin_LinkedIssueFactory_schedule_list_title = 'Wiederkehrende Erstellungen';
+$s_plugin_LinkedIssueFactory_config_title        = 'Linked Issue Factory – Konfiguration';
+$s_plugin_LinkedIssueFactory_dashboard_title     = 'Anstehende geplante Tickets';
+
+# Allgemein
+$s_plugin_LinkedIssueFactory_source_issue   = 'Ursprungsticket';
+$s_plugin_LinkedIssueFactory_target_project = 'Zielprojekt';
+
+# Felder
+$s_plugin_LinkedIssueFactory_field_summary            = 'Zusammenfassung';
+$s_plugin_LinkedIssueFactory_field_description        = 'Beschreibung';
+$s_plugin_LinkedIssueFactory_field_steps              = 'Schritte zur Reproduktion';
+$s_plugin_LinkedIssueFactory_field_additional         = 'Zusätzliche Informationen';
+$s_plugin_LinkedIssueFactory_field_category           = 'Kategorie';
+$s_plugin_LinkedIssueFactory_field_priority           = 'Priorität';
+$s_plugin_LinkedIssueFactory_field_severity           = 'Schweregrad';
+$s_plugin_LinkedIssueFactory_field_reproducibility    = 'Reproduzierbarkeit';
+$s_plugin_LinkedIssueFactory_field_handler            = 'Bearbeiter';
+$s_plugin_LinkedIssueFactory_field_view_state         = 'Sichtbarkeit';
+$s_plugin_LinkedIssueFactory_field_due_date           = 'Fälligkeitsdatum';
+$s_plugin_LinkedIssueFactory_field_relationship       = 'Beziehung des neuen Tickets';
+$s_plugin_LinkedIssueFactory_field_copy_standard      = 'Standardfelder übernehmen';
+$s_plugin_LinkedIssueFactory_field_copy_standard_hint = 'Kategorie, Priorität, Schweregrad usw. aus dem Ursprungsticket übernehmen.';
+$s_plugin_LinkedIssueFactory_field_copy_custom        = 'Custom Fields übernehmen';
+$s_plugin_LinkedIssueFactory_field_copy_custom_hint   = 'Custom-Field-Werte übernehmen, sofern im Zielprojekt gültig.';
+$s_plugin_LinkedIssueFactory_field_recurrence_type    = 'Wiederholung';
+$s_plugin_LinkedIssueFactory_field_every              = 'alle';
+$s_plugin_LinkedIssueFactory_field_start_at           = 'Startdatum';
+$s_plugin_LinkedIssueFactory_field_end_at             = 'Enddatum';
+$s_plugin_LinkedIssueFactory_field_optional           = '(optional)';
+$s_plugin_LinkedIssueFactory_field_max_occurrences    = 'Maximale Anzahl';
+$s_plugin_LinkedIssueFactory_field_max_occurrences_hint = '0 = unbegrenzt';
+$s_plugin_LinkedIssueFactory_field_active             = 'Aktiv';
+$s_plugin_LinkedIssueFactory_field_active_hint        = 'Nur aktive Wiederholungen werden vom Cron verarbeitet.';
+
+# Custom-Field-Strategie
+$s_plugin_LinkedIssueFactory_cf_strategy_linked_or_name = 'Nach verknüpftem Feld oder nach Name + kompatiblem Typ';
+$s_plugin_LinkedIssueFactory_cf_strategy_linked_only    = 'Nur Felder übernehmen, die in beiden Projekten verknüpft sind';
+
+# Wiederholungstypen (recurrence_<type>)
+$s_plugin_LinkedIssueFactory_recurrence_once     = 'Einmalig';
+$s_plugin_LinkedIssueFactory_recurrence_daily    = 'Täglich';
+$s_plugin_LinkedIssueFactory_recurrence_weekly   = 'Wöchentlich';
+$s_plugin_LinkedIssueFactory_recurrence_monthly  = 'Monatlich';
+$s_plugin_LinkedIssueFactory_recurrence_yearly   = 'Jährlich';
+$s_plugin_LinkedIssueFactory_recurrence_interval = 'Alle X Einheiten';
+
+# Einheiten (unit_<unit>)
+$s_plugin_LinkedIssueFactory_unit_days   = 'Tage';
+$s_plugin_LinkedIssueFactory_unit_weeks  = 'Wochen';
+$s_plugin_LinkedIssueFactory_unit_months = 'Monate';
+$s_plugin_LinkedIssueFactory_unit_years  = 'Jahre';
+
+# Schaltflächen
+$s_plugin_LinkedIssueFactory_btn_create          = 'Ticket jetzt erstellen';
+$s_plugin_LinkedIssueFactory_btn_plan_recurrence = 'Wiederholung planen…';
+$s_plugin_LinkedIssueFactory_btn_cancel          = 'Abbrechen';
+$s_plugin_LinkedIssueFactory_btn_back            = 'Zurück';
+$s_plugin_LinkedIssueFactory_btn_save            = 'Konfiguration speichern';
+$s_plugin_LinkedIssueFactory_btn_save_schedule   = 'Wiederholung speichern';
+
+# Modus-Hinweis
+$s_plugin_LinkedIssueFactory_mode_recurring_hint = 'Statt das Ticket jetzt zu erstellen, eine wiederkehrende Erstellung definieren.';
+
+# Spalten der Wiederholungsliste
+$s_plugin_LinkedIssueFactory_col_id             = 'ID';
+$s_plugin_LinkedIssueFactory_col_source         = 'Quelle';
+$s_plugin_LinkedIssueFactory_col_target_project = 'Zielprojekt';
+$s_plugin_LinkedIssueFactory_col_summary        = 'Zusammenfassung';
+$s_plugin_LinkedIssueFactory_col_recurrence     = 'Wiederholung';
+$s_plugin_LinkedIssueFactory_col_next_run       = 'Nächste Erstellung';
+$s_plugin_LinkedIssueFactory_col_occurrences    = 'Erstellt';
+$s_plugin_LinkedIssueFactory_col_active         = 'Status';
+$s_plugin_LinkedIssueFactory_col_actions        = 'Aktionen';
+$s_plugin_LinkedIssueFactory_col_days_left      = 'Tage bis';
+
+# Zustände / Aktionen
+$s_plugin_LinkedIssueFactory_state_active       = 'Aktiv';
+$s_plugin_LinkedIssueFactory_state_inactive     = 'Inaktiv';
+$s_plugin_LinkedIssueFactory_action_edit        = 'Bearbeiten';
+$s_plugin_LinkedIssueFactory_action_activate    = 'Aktivieren';
+$s_plugin_LinkedIssueFactory_action_deactivate  = 'Deaktivieren';
+$s_plugin_LinkedIssueFactory_action_delete      = 'Löschen';
+$s_plugin_LinkedIssueFactory_confirm_delete     = 'Diese Wiederholung löschen?';
+$s_plugin_LinkedIssueFactory_no_schedules       = 'Noch keine Wiederholungen definiert.';
+$s_plugin_LinkedIssueFactory_no_upcoming        = 'Keine anstehenden geplanten Tickets.';
+
+# Konfigurationslabels
+$s_plugin_LinkedIssueFactory_cfg_default_relationship     = 'Standard-Beziehungstyp';
+$s_plugin_LinkedIssueFactory_cfg_copy_custom_default      = 'Custom Fields standardmäßig übernehmen';
+$s_plugin_LinkedIssueFactory_cfg_copy_custom_default_hint = 'Custom Fields beim Erstellen eines verknüpften Tickets aus dem Ursprungsticket vorbefüllen.';
+$s_plugin_LinkedIssueFactory_cfg_default_target           = 'Standard-Zielprojekt';
+$s_plugin_LinkedIssueFactory_cfg_default_target_none      = '(wie Ursprungsticket)';
+$s_plugin_LinkedIssueFactory_cfg_enable_recurring         = 'Wiederkehrende Tickets aktivieren';
+$s_plugin_LinkedIssueFactory_cfg_enable_recurring_hint    = 'Wiederholungsseiten anzeigen und den Cron wiederkehrende Tickets erzeugen lassen.';
+$s_plugin_LinkedIssueFactory_cfg_default_recurrence       = 'Standardintervall für neue Wiederholungen';
+$s_plugin_LinkedIssueFactory_cfg_cron_user                = 'Technischer Cron-Benutzer';
+$s_plugin_LinkedIssueFactory_cfg_cron_user_hint           = 'Wird vom Cron verwendet, sofern die Umgebungsvariable LINKED_ISSUE_FACTORY_USER nicht gesetzt ist. Leer = administrator.';
+$s_plugin_LinkedIssueFactory_cfg_link_target              = 'Wiederkehrendes Ticket verknüpfen mit';
+$s_plugin_LinkedIssueFactory_cfg_link_target_source       = 'dem ursprünglichen Quellticket';
+$s_plugin_LinkedIssueFactory_cfg_link_target_last         = 'dem zuletzt erzeugten Ticket';
+$s_plugin_LinkedIssueFactory_cfg_add_notes                = 'Interne Notizen hinzufügen';
+$s_plugin_LinkedIssueFactory_cfg_add_notes_hint           = 'Querverweis-Notizen im Ursprungs- und im neuen Ticket schreiben.';
+$s_plugin_LinkedIssueFactory_cfg_notes_private            = 'Interne Notizen privat';
+$s_plugin_LinkedIssueFactory_cfg_notes_private_hint       = 'Die Querverweis-Notizen als private Notizen erstellen.';
+
+# Querverweis-Notizen (werden auch per lang_get_defaulted in der Helper-Bibliothek gelesen)
+$s_plugin_LinkedIssueFactory_note_source_once      = '[LinkedIssueFactory] Aus diesem Ticket wurde das verknüpfte Ticket #%d erstellt.';
+$s_plugin_LinkedIssueFactory_note_source_recurring = '[LinkedIssueFactory] Aus diesem Ticket wurde das wiederkehrende, verknüpfte Ticket #%d erstellt.';
+$s_plugin_LinkedIssueFactory_note_new_issue        = '[LinkedIssueFactory] Dieses Ticket wurde aus dem Ursprungsticket #%d erstellt.';
+
+# Fehler
+$s_plugin_LinkedIssueFactory_error_no_report_access = 'Sie haben in keinem Projekt die Berechtigung, Tickets zu erstellen. Es kann kein verknüpftes Ticket angelegt werden.';
+$s_plugin_LinkedIssueFactory_error_create_failed    = 'Das verknüpfte Ticket konnte nicht erstellt werden:';

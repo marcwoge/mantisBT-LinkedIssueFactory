@@ -1,0 +1,7 @@
+# Konsistente Zeilenenden: Quellcode immer mit LF (wichtig fuer Linux-Server)
+*.php   text eol=lf
+*.txt   text eol=lf
+*.css   text eol=lf
+*.md    text eol=lf
+*.json  text eol=lf
+LICENSE text eol=lf

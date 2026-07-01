@@ -1,0 +1,139 @@
+<?php
+/**
+ * LinkedIssueFactory – English language strings.
+ *
+ * MantisBT plugin language variables must carry the full
+ * "plugin_<Basename>_" prefix; plugin_lang_get('key') looks up
+ * "plugin_LinkedIssueFactory_key".
+ *
+ * @package LinkedIssueFactory
+ * @license MIT
+ */
+
+# Plugin manifest
+$s_plugin_LinkedIssueFactory_plugin_title       = 'Linked Issue Factory';
+$s_plugin_LinkedIssueFactory_plugin_description = 'Create a linked new ticket from an existing one – once or on a recurring schedule.';
+
+# Menus
+$s_plugin_LinkedIssueFactory_menu_create_related = 'Create linked ticket';
+$s_plugin_LinkedIssueFactory_menu_config         = 'Linked Issue Factory: Configuration';
+$s_plugin_LinkedIssueFactory_menu_schedules      = 'Linked Issue Factory: Schedules';
+$s_plugin_LinkedIssueFactory_menu_dashboard      = 'Linked Issue Factory: Dashboard';
+
+# Page titles
+$s_plugin_LinkedIssueFactory_create_title        = 'Create Linked Ticket';
+$s_plugin_LinkedIssueFactory_schedule_edit_title = 'Recurring Schedule';
+$s_plugin_LinkedIssueFactory_schedule_list_title = 'Recurring Schedules';
+$s_plugin_LinkedIssueFactory_config_title        = 'Linked Issue Factory – Configuration';
+$s_plugin_LinkedIssueFactory_dashboard_title     = 'Upcoming Scheduled Tickets';
+
+# Generic
+$s_plugin_LinkedIssueFactory_source_issue   = 'Source issue';
+$s_plugin_LinkedIssueFactory_target_project = 'Target project';
+
+# Fields
+$s_plugin_LinkedIssueFactory_field_summary            = 'Summary';
+$s_plugin_LinkedIssueFactory_field_description        = 'Description';
+$s_plugin_LinkedIssueFactory_field_steps              = 'Steps to reproduce';
+$s_plugin_LinkedIssueFactory_field_additional         = 'Additional information';
+$s_plugin_LinkedIssueFactory_field_category           = 'Category';
+$s_plugin_LinkedIssueFactory_field_priority           = 'Priority';
+$s_plugin_LinkedIssueFactory_field_severity           = 'Severity';
+$s_plugin_LinkedIssueFactory_field_reproducibility    = 'Reproducibility';
+$s_plugin_LinkedIssueFactory_field_handler            = 'Assigned to';
+$s_plugin_LinkedIssueFactory_field_view_state         = 'View status';
+$s_plugin_LinkedIssueFactory_field_due_date           = 'Due date';
+$s_plugin_LinkedIssueFactory_field_relationship       = 'Relationship of the new ticket';
+$s_plugin_LinkedIssueFactory_field_copy_standard      = 'Copy standard fields';
+$s_plugin_LinkedIssueFactory_field_copy_standard_hint = 'Copy category, priority, severity, etc. from the source ticket.';
+$s_plugin_LinkedIssueFactory_field_copy_custom        = 'Copy custom fields';
+$s_plugin_LinkedIssueFactory_field_copy_custom_hint   = 'Copy custom-field values that are valid in the target project.';
+$s_plugin_LinkedIssueFactory_field_recurrence_type    = 'Recurrence';
+$s_plugin_LinkedIssueFactory_field_every              = 'every';
+$s_plugin_LinkedIssueFactory_field_start_at           = 'Start date';
+$s_plugin_LinkedIssueFactory_field_end_at             = 'End date';
+$s_plugin_LinkedIssueFactory_field_optional           = '(optional)';
+$s_plugin_LinkedIssueFactory_field_max_occurrences    = 'Maximum occurrences';
+$s_plugin_LinkedIssueFactory_field_max_occurrences_hint = '0 = unlimited';
+$s_plugin_LinkedIssueFactory_field_active             = 'Active';
+$s_plugin_LinkedIssueFactory_field_active_hint        = 'Only active schedules are processed by the cron.';
+
+# Custom-field strategy
+$s_plugin_LinkedIssueFactory_cf_strategy_linked_or_name = 'Match by linked field or by name + compatible type';
+$s_plugin_LinkedIssueFactory_cf_strategy_linked_only    = 'Only copy fields linked to both projects';
+
+# Recurrence type labels (recurrence_<type>)
+$s_plugin_LinkedIssueFactory_recurrence_once     = 'Once';
+$s_plugin_LinkedIssueFactory_recurrence_daily    = 'Daily';
+$s_plugin_LinkedIssueFactory_recurrence_weekly   = 'Weekly';
+$s_plugin_LinkedIssueFactory_recurrence_monthly  = 'Monthly';
+$s_plugin_LinkedIssueFactory_recurrence_yearly   = 'Yearly';
+$s_plugin_LinkedIssueFactory_recurrence_interval = 'Every X units';
+
+# Units (unit_<unit>)
+$s_plugin_LinkedIssueFactory_unit_days   = 'Days';
+$s_plugin_LinkedIssueFactory_unit_weeks  = 'Weeks';
+$s_plugin_LinkedIssueFactory_unit_months = 'Months';
+$s_plugin_LinkedIssueFactory_unit_years  = 'Years';
+
+# Buttons
+$s_plugin_LinkedIssueFactory_btn_create          = 'Create ticket now';
+$s_plugin_LinkedIssueFactory_btn_plan_recurrence = 'Plan recurrence…';
+$s_plugin_LinkedIssueFactory_btn_cancel          = 'Cancel';
+$s_plugin_LinkedIssueFactory_btn_back            = 'Back';
+$s_plugin_LinkedIssueFactory_btn_save            = 'Save configuration';
+$s_plugin_LinkedIssueFactory_btn_save_schedule   = 'Save schedule';
+
+# Mode hint
+$s_plugin_LinkedIssueFactory_mode_recurring_hint = 'Instead of creating the ticket now, define a recurring schedule.';
+
+# Schedule list columns
+$s_plugin_LinkedIssueFactory_col_id             = 'ID';
+$s_plugin_LinkedIssueFactory_col_source         = 'Source';
+$s_plugin_LinkedIssueFactory_col_target_project = 'Target project';
+$s_plugin_LinkedIssueFactory_col_summary        = 'Summary';
+$s_plugin_LinkedIssueFactory_col_recurrence     = 'Recurrence';
+$s_plugin_LinkedIssueFactory_col_next_run       = 'Next creation';
+$s_plugin_LinkedIssueFactory_col_occurrences    = 'Created';
+$s_plugin_LinkedIssueFactory_col_active         = 'State';
+$s_plugin_LinkedIssueFactory_col_actions        = 'Actions';
+$s_plugin_LinkedIssueFactory_col_days_left      = 'Days left';
+
+# States / actions
+$s_plugin_LinkedIssueFactory_state_active       = 'Active';
+$s_plugin_LinkedIssueFactory_state_inactive     = 'Inactive';
+$s_plugin_LinkedIssueFactory_action_edit        = 'Edit';
+$s_plugin_LinkedIssueFactory_action_activate    = 'Activate';
+$s_plugin_LinkedIssueFactory_action_deactivate  = 'Deactivate';
+$s_plugin_LinkedIssueFactory_action_delete      = 'Delete';
+$s_plugin_LinkedIssueFactory_confirm_delete     = 'Delete this schedule?';
+$s_plugin_LinkedIssueFactory_no_schedules       = 'No schedules defined yet.';
+$s_plugin_LinkedIssueFactory_no_upcoming        = 'No upcoming scheduled tickets.';
+
+# Configuration labels
+$s_plugin_LinkedIssueFactory_cfg_default_relationship     = 'Default relationship type';
+$s_plugin_LinkedIssueFactory_cfg_copy_custom_default      = 'Copy custom fields by default';
+$s_plugin_LinkedIssueFactory_cfg_copy_custom_default_hint = 'Pre-fill custom fields from the source ticket when creating a linked ticket.';
+$s_plugin_LinkedIssueFactory_cfg_default_target           = 'Default target project';
+$s_plugin_LinkedIssueFactory_cfg_default_target_none      = '(same as source ticket)';
+$s_plugin_LinkedIssueFactory_cfg_enable_recurring         = 'Enable recurring tickets';
+$s_plugin_LinkedIssueFactory_cfg_enable_recurring_hint    = 'Show the schedule pages and let the cron create recurring tickets.';
+$s_plugin_LinkedIssueFactory_cfg_default_recurrence       = 'Default recurrence for new schedules';
+$s_plugin_LinkedIssueFactory_cfg_cron_user                = 'Technical cron user';
+$s_plugin_LinkedIssueFactory_cfg_cron_user_hint           = 'Used by the cron unless the LINKED_ISSUE_FACTORY_USER environment variable is set. Empty = administrator.';
+$s_plugin_LinkedIssueFactory_cfg_link_target              = 'Link recurring ticket to';
+$s_plugin_LinkedIssueFactory_cfg_link_target_source       = 'The original source ticket';
+$s_plugin_LinkedIssueFactory_cfg_link_target_last         = 'The most recently created ticket';
+$s_plugin_LinkedIssueFactory_cfg_add_notes                = 'Add internal notes';
+$s_plugin_LinkedIssueFactory_cfg_add_notes_hint           = 'Write cross-reference notes in the source and the new ticket.';
+$s_plugin_LinkedIssueFactory_cfg_notes_private            = 'Make internal notes private';
+$s_plugin_LinkedIssueFactory_cfg_notes_private_hint       = 'Create the cross-reference notes as private notes.';
+
+# Cross-reference notes (also read via lang_get_defaulted in the helper library)
+$s_plugin_LinkedIssueFactory_note_source_once      = '[LinkedIssueFactory] A linked issue #%d was created from this issue.';
+$s_plugin_LinkedIssueFactory_note_source_recurring = '[LinkedIssueFactory] A recurring linked issue #%d was created from this issue.';
+$s_plugin_LinkedIssueFactory_note_new_issue        = '[LinkedIssueFactory] This issue was created from source issue #%d.';
+
+# Errors
+$s_plugin_LinkedIssueFactory_error_no_report_access = 'You do not have permission to report issues in any project. A linked ticket cannot be created.';
+$s_plugin_LinkedIssueFactory_error_create_failed    = 'The linked ticket could not be created:';
