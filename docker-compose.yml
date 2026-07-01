@@ -30,9 +30,9 @@ services:
     ports:
       - "8989:80"
     volumes:
-      # Mount the plugin (repo root) straight into MantisBT's plugins directory.
-      # Extra files (docker/, .git, README) are harmless to the plugin loader.
-      - .:/var/www/html/plugins/LinkedIssueFactory
+      # Mount only the plugin folder into MantisBT's plugins directory, so the
+      # container sees exactly what ships in the release (no docker/, .git, …).
+      - ./LinkedIssueFactory:/var/www/html/plugins/LinkedIssueFactory
       # Pre-baked configuration (DB + Mailpit).
       - ./docker/config_inc.php:/var/www/html/config/config_inc.php
 

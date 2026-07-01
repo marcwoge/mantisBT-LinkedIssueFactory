@@ -32,24 +32,6 @@ modifications** and has **no Composer / npm dependencies**.
 
 ---
 
-## Repository layout
-
-The installable plugin lives in its own self-contained folder; everything else
-is tooling for local testing.
-
-```
-LinkedIssueFactory/     ← the plugin – copy THIS folder into <mantis>/plugins/
-docker/                 ← local MantisBT sandbox (see docker/README.md)
-docker-compose.yml
-docs/MANUAL_TESTS.md    ← manual test checklist
-```
-
-The release also ships a ready-to-drop archive containing only the
-`LinkedIssueFactory/` folder – see the
-[latest release](https://github.com/marcwoge/LinkedIssueFactory/releases/latest).
-
----
-
 ## Requirements
 
 * MantisBT **2.x** (developed and tested against 2.28)
