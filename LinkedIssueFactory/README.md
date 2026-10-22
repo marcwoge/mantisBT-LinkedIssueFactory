@@ -35,6 +35,7 @@ modifications** and has **no Composer / npm dependencies**.
 ## Requirements
 
 * MantisBT **2.x** (developed and tested against 2.28)
+* Recommended: MantisBT **2.28.4 or newer** (fixes CVE-2026-47156)
 * PHP **7.4+**
 
 ---

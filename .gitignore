@@ -12,3 +12,6 @@ Thumbs.db
 # PHP
 vendor/
 composer.lock
+
+# Local Docker sandbox secrets (see .env.example)
+.env
