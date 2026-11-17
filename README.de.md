@@ -54,7 +54,7 @@ Das Release enthält zusätzlich ein fertiges Archiv mit **nur** dem
 
 * MantisBT **2.x** (entwickelt/getestet mit 2.28)
 * Empfohlen: MantisBT **2.28.4 oder neuer** (behebt CVE-2026-47156)
-* PHP **7.4+**
+* PHP **7.4+** (in der CI geprüft mit PHP 8.3, 8.4 und 8.5)
 
 ---
 
